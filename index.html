@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(233, 47%, 7%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: hsl(244, 38%, 16%);
+      width: 1200px;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      border-radius: 15px;
+    }
+
+    .texto {
+      display: flex;
+      flex-direction: column;
+      padding: 55px;
+      justify-content: space-around;
+      width: 600px;
+    }
+
+    .texto h1 {
+      color: hsl(0, 0%, 100%);
+      font-family: "Inter";
+      font-size: 30px;
+    }
+
+    span {
+      color: rgb(186, 145, 224);
+    }
+
+    .texto p {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: "Inter";
+      line-height: 30px;
+    }
+
+    .texto .number ul {
+      display: flex;
+      justify-content: row;
+      gap: 50px;
+      margin-left: -40px;
+    }
+
+    .texto .number ul li{
+      display: flex;
+      flex-direction: column
+    }
+
+    .texto .number .li h1 {
+      color: hsl(0, 0%, 100%);
+      
+    }
+    .texto .number li p {
+      color: hsla(0, 0%, 100%, 0.6);
+      font-family: "Lexend Deca";
+      margin-top: -10px;
+    }
+
+    .image {
+      background-color: hsl(277, 97%, 26%)
+    }
+
+    .image img {
+      height: 100%;
+      width: 600px;
+      filter: opacity(50%) ;
+    }
+  
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <section class="container">
+
+    <div class="texto">
+
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+
+        <div class="number">
+
+          <ul>
+          <li>
+            <h1>10k+ </h1>
+            <p>COMPAINES</p>
+          </li>
+          <li>
+            <h1>314 </h1>
+            <p>TEMPLATES</p>
+          </li>
+          <li>
+            <h1>12M+</h1>
+            <p>QUERIES</p>
+          </ul>
+
+        </div>
+
+    </div>
+
+    <div class="image">
+
+      <img src="images/image-header-desktop.jpg" alt="">
+
+    </div>
+
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
